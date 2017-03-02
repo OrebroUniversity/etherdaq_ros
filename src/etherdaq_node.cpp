@@ -150,7 +150,7 @@ int main(int argc, char **argv)
   diag_array.status.reserve(1);
   diagnostic_updater::DiagnosticStatusWrapper diag_status;
   ros::Time last_diag_pub_time(ros::Time::now());
-
+  etherdaq->doZero();
   unsigned int packetCount = 0; 
   ros::Time startTime(ros::Time::now());	
   while (ros::ok())
